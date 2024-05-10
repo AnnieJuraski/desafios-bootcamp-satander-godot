@@ -37,3 +37,9 @@ Ao final deve se exibir uma mensagem:
 
   
 Bons estudos 😉
+
+
+
+# Minha resolução
+
+Minha abordagem foi criar uma função que calcula o nível e o saldo de vitória, armazenando em variáveis globais. A função funciona ao receber os parametros vitória e derrota, respectivamente nessa ordem. Então crio uma estrutura de repetição para testar diferentes saldos estabelecidos.

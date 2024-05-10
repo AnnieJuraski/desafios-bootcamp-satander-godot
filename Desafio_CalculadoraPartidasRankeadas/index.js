@@ -24,25 +24,23 @@ function calcularNivelESaldo(vitorias, derrotas){
 }
 
 
-console.log("\n\nn##############################################\n")
-console.log("Testando com 50 vitórias e 15 derrotas \n")
+function checarNiveis(saldos) {
+    console.log("\n\n##############################################\n");
+    for (let i = 0; i < saldos.length; i++) {
+        let [vitorias, derrotas] = saldos[i];
+        calcularNivelESaldo(vitorias, derrotas);
+        console.log(`O Herói tem um saldo de ${saldo} vitórias e está no nível ${nivel}`);
+    }
+}
 
-//Vitorias deve ser passado em primeiro e derrotas em seguida;
-calcularNivelESaldo(50,15);
-console.log(`O Herói tem de saldo de ${saldo} vitórias e está no nível de ${nivel}`);
+let saldosDiferentes = [
+    [50, 15],
+    [25, 19],
+    [124, 11],
+    [18, 32]
+];
 
-
-console.log("\n\nn##############################################\n")
-console.log("Testando com 10 vitórias e 15 derrotas \n")
-
-calcularNivelESaldo(10,15);
-console.log(`O Herói tem de saldo de ${saldo} vitórias e está no nível de ${nivel}`);
-
-console.log("\n\nn##############################################\n")
-console.log("Testando com 120 vitórias e 10 derrotas \n")
-
-calcularNivelESaldo(120,15);
-console.log(`O Herói tem de saldo de ${saldo} vitórias e está no nível ${nivel}`);
+checarNiveis(saldosDiferentes);
 
 
 
